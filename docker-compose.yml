@@ -1,0 +1,11 @@
+services:
+  test-db:
+    image: postgres:latest
+    container_name: test-db
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "5455:5432"
+    volumes:
+      - ./data/test/postgres_data:/var/lib/postgresql/data  # Fixed path
