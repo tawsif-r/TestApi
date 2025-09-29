@@ -4,3 +4,13 @@ GET {{TestApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+POST {{TestApi_HostAddress}}/api/Persons
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": "b8e4b367-3b4a-4f47-8c9c-5f4c0f9b0c67",
+    "name": "Alice",
+    "age": 30,
+    "gender": "Female"
+}

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TestApi.Data;
+using System.Linq;
 
 namespace TestApi.Controllers
 {
@@ -18,6 +19,9 @@ namespace TestApi.Controllers
         {
             var allEmployes = dbContext.Employees.ToList();
             return Ok(allEmployes);
+            // var salaryEmployees = dbContext.Employees.ToList();
+            // var result = salaryEmployees.Where(p => p.Salary > 1000).ToList();
+            // return Ok(result);
         }
     }
 }
