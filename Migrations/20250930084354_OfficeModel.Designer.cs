@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TestApi.Data;
@@ -11,9 +12,11 @@ using TestApi.Data;
 namespace TestApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250930084354_OfficeModel")]
+    partial class OfficeModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,9 +37,6 @@ namespace TestApi.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.Property<Guid?>("OfficeId")
-                        .HasColumnType("uuid");
-
                     b.Property<string>("Phone")
                         .HasColumnType("text");
 
@@ -45,29 +45,7 @@ namespace TestApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OfficeId");
-
                     b.ToTable("Employees");
-                });
-
-            modelBuilder.Entity("TestApi.Models.Entities.Office", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<decimal>("Age")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Type_of_office")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Office");
                 });
 
             modelBuilder.Entity("TestApi.Models.Entities.Person", b =>
@@ -88,20 +66,6 @@ namespace TestApi.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Persons");
-                });
-
-            modelBuilder.Entity("TestApi.Models.Entities.Employee", b =>
-                {
-                    b.HasOne("TestApi.Models.Entities.Office", "Office")
-                        .WithMany("Employees")
-                        .HasForeignKey("OfficeId");
-
-                    b.Navigation("Office");
-                });
-
-            modelBuilder.Entity("TestApi.Models.Entities.Office", b =>
-                {
-                    b.Navigation("Employees");
                 });
 #pragma warning restore 612, 618
         }

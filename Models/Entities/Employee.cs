@@ -7,6 +7,9 @@ namespace TestApi.Models.Entities
         public string? Email { get; set; }
         public string? Phone { get; set; }
         public decimal Salary { get; set; }
-
+        // foreign key
+        public Guid? OfficeId { get; set; }
+        // Navigation property (each employee belongs to one office)
+        public Office? Office { get; set; }
     }
 }
