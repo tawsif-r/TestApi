@@ -11,5 +11,7 @@ namespace TestApi.Data
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Person> Persons { get; set; }
+        public DbSet<Office> Offices { get; set; }
+        
     }
 }
