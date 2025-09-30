@@ -1,6 +1,6 @@
 @TestApi_HostAddress = http://localhost:5148
 
-GET {{TestApi_HostAddress}}/weatherforecast/
+GET {{TestApi_HostAddress}}/api/Persons
 Accept: application/json
 
 ###
@@ -9,8 +9,23 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "id": "b8e4b367-3b4a-4f47-8c9c-5f4c0f9b0c67",
-    "name": "Alice",
-    "age": 30,
+    "id": "b8e4b367-3b4a-4f47-8c9c-5f4c0f9b0c65",
+    "name": "Macavi",
+    "age": 32,
     "gender": "Female"
 }
+
+###
+DELETE {{TestApi_HostAddress}}/api/Persons/b8e4b367-3b4a-4f47-8c9c-5f4c0f9b0c65
+
+###
+PUT {{TestApi_HostAddress}}/api/Persons/b8e4b367-3b4a-4f47-8c9c-5f4c0f9b0c65
+Content-Type: application/json
+
+{
+    "id": "b8e4b367-3b4a-4f47-8c9c-5f4c0f9b0c65",
+    "name": "Macavelli",
+    "age": 32,
+    "gender": "male"
+}
+
