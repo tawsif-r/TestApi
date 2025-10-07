@@ -18,13 +18,19 @@ namespace TestApi.Controllers
             this.dbContext = dbContext;
             this.logger = logger;
         }
+
+        //=======================
+        // GET METHOD
+        //=======================
         [HttpGet]
         public IActionResult GetAllPersons()
         {
             var allPersons = dbContext.Persons.ToList();
             return Ok(allPersons);
         }
-
+        //========================
+        // CREATE METHOD POST
+        //========================
         [HttpPost]
         // IActionResult is a type return for the controller method
         // FromBody tells ASP.NET Core to read the value of the person parameter from the body of the HTTP request,

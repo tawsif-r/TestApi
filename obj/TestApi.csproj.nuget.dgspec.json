@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/tawsif/Documents/express/projects/TestApi/TestApi.csproj": {}
+    "/home/tawsif/Documents/dotnet_projects/projects/TestApi/TestApi.csproj": {}
   },
   "projects": {
-    "/home/tawsif/Documents/express/projects/TestApi/TestApi.csproj": {
+    "/home/tawsif/Documents/dotnet_projects/projects/TestApi/TestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tawsif/Documents/express/projects/TestApi/TestApi.csproj",
+        "projectUniqueName": "/home/tawsif/Documents/dotnet_projects/projects/TestApi/TestApi.csproj",
         "projectName": "TestApi",
-        "projectPath": "/home/tawsif/Documents/express/projects/TestApi/TestApi.csproj",
+        "projectPath": "/home/tawsif/Documents/dotnet_projects/projects/TestApi/TestApi.csproj",
         "packagesPath": "/home/tawsif/.nuget/packages/",
-        "outputPath": "/home/tawsif/Documents/express/projects/TestApi/obj/",
+        "outputPath": "/home/tawsif/Documents/dotnet_projects/projects/TestApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/tawsif/.nuget/NuGet/NuGet.Config"

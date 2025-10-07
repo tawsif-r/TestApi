@@ -6,6 +6,7 @@ namespace TestApi.Models.Entities
         public string? Name { get; set; }
         public string? Email { get; set; }
         public string? Phone { get; set; }
+        public bool? IsMarried { get; set; }
         public decimal Salary { get; set; }
         // foreign key
         public Guid? OfficeId { get; set; }
