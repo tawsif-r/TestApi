@@ -29,3 +29,19 @@ Content-Type: application/json
     "gender": "male"
 }
 
+
+
+# Office post request
+###
+POST {{TestApi_HostAddress}}/api/Offices
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": "b8e4b367-3b4a-4f47-8c9c-5f4c0f9b0c65",
+    "Name": "Macavi",
+    "Type_of_office": "corporate",
+    "Age":22
+}
+
+
