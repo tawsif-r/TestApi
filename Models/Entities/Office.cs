@@ -8,6 +8,7 @@ namespace TestApi.Models.Entities
         public string? Name { get; set; }
         public string? Type_of_office { get; set; }
         public decimal Age { get; set; }
+        public string? Shift { get; set; }
         public ICollection<Employee> Employees { get; set; } = [];
      
     }

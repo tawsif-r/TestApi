@@ -12,8 +12,8 @@ using TestApi.Data;
 namespace TestApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250930085403_foreignkeyadded")]
-    partial class foreignkeyadded
+    [Migration("20250930085403_Foreignkeyadded")]
+    partial class Foreignkeyadded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

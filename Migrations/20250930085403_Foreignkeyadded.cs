@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TestApi.Migrations
 {
     /// <inheritdoc />
-    public partial class foreignkeyadded : Migration
+    public partial class Foreignkeyadded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
