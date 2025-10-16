@@ -260,3 +260,16 @@
 /home/tawsif/Documents/dotnet_projects/projects/TestApi/obj/Debug/net9.0/TestApi.pdb
 /home/tawsif/Documents/dotnet_projects/projects/TestApi/obj/Debug/net9.0/TestApi.genruntimeconfig.cache
 /home/tawsif/Documents/dotnet_projects/projects/TestApi/obj/Debug/net9.0/ref/TestApi.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/Namotion.Reflection.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/Newtonsoft.Json.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NJsonSchema.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NJsonSchema.Annotations.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NJsonSchema.NewtonsoftJson.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NJsonSchema.Yaml.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NSwag.Annotations.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NSwag.AspNetCore.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NSwag.Core.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NSwag.Core.Yaml.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NSwag.Generation.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/NSwag.Generation.AspNetCore.dll
+/home/tawsif/Documents/dotnet_projects/projects/TestApi/bin/Debug/net9.0/YamlDotNet.dll
